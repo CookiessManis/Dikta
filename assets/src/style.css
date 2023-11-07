@@ -65,5 +65,40 @@ body {
 /* end login */
 
 /* register */
+.register-text {
+  font-size: 45px;
+  font-weight: semibold;
+  width: 510px;
+  padding-bottom: 17px;
+}
+.container-register-form {
+  padding-top: 120px;
+  padding-left: 71px;
+}
 
+.input-register {
+  padding: 15px 10px;
+}
+
+.btn-register {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 40px;
+  border-color: white;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #2494ea;
+  color: white;
+}
+@media only screen and (min-width: 1499px) {
+  .container-image {
+    padding-right: 140px;
+  }
+  .img-register {
+    width: 620px;
+  }
+}
 /* end register */
