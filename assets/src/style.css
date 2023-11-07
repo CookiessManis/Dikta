@@ -13,6 +13,9 @@ body {
   padding-top: 97px;
   padding-right: 28px;
 }
+.logo-text-name {
+  font-size: 35px;
+}
 
 .font-logo {
   font-size: 45px;
@@ -50,7 +53,6 @@ body {
 
 .input-login {
   padding: 15px 10px;
-  line-height: 10px;
 }
 
 .text-link-register {
@@ -62,6 +64,21 @@ body {
   opacity: 60%;
 }
 
+/* ukuran layar 1499 keatas */
+@media only screen and (min-width: 1499px) {
+  .img-section {
+    padding-right: 140px;
+  }
+  .img-login {
+    width: 620px;
+  }
+  .logo-text {
+    padding-right: 250px;
+  }
+  .logo-text-name {
+    font-size: 44px;
+  }
+}
 /* end login */
 
 /* register */
@@ -93,6 +110,8 @@ body {
   background-color: #2494ea;
   color: white;
 }
+
+/* ukuran layar 1499 keatas */
 @media only screen and (min-width: 1499px) {
   .container-image {
     padding-right: 140px;
