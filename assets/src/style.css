@@ -1,5 +1,69 @@
+/* login */
 body {
-  background-image: url("../img/background-login.jpg");
   width: 100%;
   background-repeat: no-repeat;
 }
+
+.logo-container {
+  padding-left: 70px;
+  padding-top: 23px;
+}
+
+.logo-text {
+  padding-top: 97px;
+  padding-right: 28px;
+}
+
+.font-logo {
+  font-size: 45px;
+}
+
+.container-login {
+  padding-top: 100px;
+  padding-left: 71px;
+}
+
+.login {
+  padding-top: 80px;
+  width: 500px;
+}
+
+.btn-container {
+  padding-top: 25px;
+}
+.btn-login {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #2494ea;
+  color: white;
+}
+
+.container-form-login {
+  padding-top: 43px;
+}
+
+.input-login {
+  padding: 15px 10px;
+  line-height: 10px;
+}
+
+.text-link-register {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.img-section {
+  opacity: 60%;
+}
+
+/* end login */
+
+/* register */
+
+/* end register */
