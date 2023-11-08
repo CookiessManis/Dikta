@@ -121,3 +121,35 @@ body {
   }
 }
 /* end register */
+
+/* dashboard */
+.card-sizing {
+  width: 339px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+/* end dashboard */
+.value-dashboard {
+  font-size: 50px;
+  padding-top: 20px;
+}
+.pegawai-dashboard {
+  font-size: 32px;
+  font-weight: 500;
+}
+.keterangan-dashboard {
+  font-size: 14px;
+}
+
+.table-container {
+  width: 1250px;
+}
+
+.table-header {
+  background-color: #a1c6f2;
+  border-radius: 10;
+}
+.th {
+  border-radius: 10px 10px 0 0;
+}
