@@ -166,3 +166,7 @@ body {
 .table-pegawai {
   width: 1200px;
 }
+
+.table-row {
+  font-size: 24px;
+}
