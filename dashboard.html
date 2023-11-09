@@ -32,7 +32,7 @@
       <aside class="sidebar">
         <ul class="menu-list">
           <li>
-            <div class="ps-2">
+            <div class="ps-2" id="logo-satpolpp">
               <img src="assets/img/login/logo.svg" width="50" alt="" />
             </div>
           </li>
@@ -56,151 +56,170 @@
               </div>
             </button>
           </li>
-          <li>
-            <button class="icon" id="clients">
-              <img src="assets/images/user.svg" alt="clients" />
-            </button>
-          </li>
-          <li>
-            <button class="icon" id="vets">
-              <img src="assets/images/vet.svg" alt="vets" />
-            </button>
-          </li>
-          <li>
-            <button class="icon" id="settings">
-              <img src="assets/images/settings.svg" alt="settings" />
-            </button>
-          </li>
         </ul>
       </aside>
       <section class="main">
         <!-- hamburger menu -->
-        <div class="menu-container cursor-pointer">
-          <a class=".icon-hamburger" id="menu">
-            <img src="assets/images/menu.svg" alt="menu" />
+        <div class="menu-container py-2 d-flex justify-content-between">
+          <a class="icon-hamburger px-2 py-2" id="menu">
+            <img
+              src="assets/images/menu.svg"
+              class="container-ham"
+              alt="menu"
+            />
           </a>
+
+          <div class="dropdown px-4 container-dropdown">
+            <img
+              src="assets/img/dashboard/logo-right.png"
+              alt=""
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="dropdown-toggle"
+            />
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
         </div>
         <!-- end hamburger menu -->
 
         <!-- content -->
 
-        <!-- card -->
-        <div class="container text-center">
-          <div class="d-flex justify-content-around py-5">
-            <!-- Dashboard info widget 1-->
-            <div
-              class="card card-sizing border-start-lg border-start-primary h-100"
-            >
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between">
-                      <div class="value-dashboard text-start fw-bold">339</div>
-                      <div>
-                        <img src="assets/img/dashboard/icon-user.png" alt="" />
+        <div id="container-content">
+          <!-- card -->
+          <div class="container text-center">
+            <div class="d-flex justify-content-around py-5">
+              <!-- Dashboard info widget 1-->
+              <div
+                class="card card-sizing border-start-lg border-start-primary h-100"
+              >
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                      <div class="d-flex justify-content-between">
+                        <div class="value-dashboard text-start fw-bold">
+                          339
+                        </div>
+                        <div>
+                          <img
+                            src="assets/img/dashboard/icon-user.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-start pegawai-dashboard">
+                        Jumlah Pegawai
+                      </div>
+                      <div
+                        class="text-xs fw-bold keterangan-dashboard text-start"
+                      >
+                        Jumlah keseluruhan pegawai satpol pp diy
                       </div>
                     </div>
-
-                    <div class="text-start pegawai-dashboard">
-                      Jumlah Pegawai
+                    <div class="ms-2">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                     </div>
-                    <div
-                      class="text-xs fw-bold keterangan-dashboard text-start"
-                    >
-                      Jumlah keseluruhan pegawai satpol pp diy
-                    </div>
-                  </div>
-                  <div class="ms-2">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card card-sizing border-start-lg border-start-primary h-100"
-            >
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between">
-                      <div class="value-dashboard text-start fw-bold">70</div>
-                      <div>
-                        <img src="assets/img/dashboard/icon-user.png" alt="" />
+              <div
+                class="card card-sizing border-start-lg border-start-primary h-100"
+              >
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                      <div class="d-flex justify-content-between">
+                        <div class="value-dashboard text-start fw-bold">70</div>
+                        <div>
+                          <img
+                            src="assets/img/dashboard/icon-user.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-start pegawai-dashboard">
+                        Pegawai Aktif
+                      </div>
+                      <div
+                        class="text-xs fw-bold keterangan-dashboard text-start"
+                      >
+                        Jumlah Pegawai Aktif
                       </div>
                     </div>
-
-                    <div class="text-start pegawai-dashboard">
-                      Pegawai Aktif
+                    <div class="ms-2">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                     </div>
-                    <div
-                      class="text-xs fw-bold keterangan-dashboard text-start"
-                    >
-                      Jumlah Pegawai Aktif
-                    </div>
-                  </div>
-                  <div class="ms-2">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="card card-sizing border-start-lg border-start-primary h-100"
-            >
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between">
-                      <div class="value-dashboard text-start fw-bold">395</div>
-                      <div>
-                        <img src="assets/img/dashboard/icon-user.png" alt="" />
+              <div
+                class="card card-sizing border-start-lg border-start-primary h-100"
+              >
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                      <div class="d-flex justify-content-between">
+                        <div class="value-dashboard text-start fw-bold">
+                          395
+                        </div>
+                        <div>
+                          <img
+                            src="assets/img/dashboard/icon-user.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-start pegawai-dashboard">
+                        Jumlah Pegawai
+                      </div>
+                      <div
+                        class="text-xs fw-bold keterangan-dashboard text-start"
+                      >
+                        Jumlah keseluruhan pegawai satpol pp diy
                       </div>
                     </div>
-
-                    <div class="text-start pegawai-dashboard">
-                      Jumlah Pegawai
+                    <div class="ms-2">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                     </div>
-                    <div
-                      class="text-xs fw-bold keterangan-dashboard text-start"
-                    >
-                      Jumlah keseluruhan pegawai satpol pp diy
-                    </div>
-                  </div>
-                  <div class="ms-2">
-                    <i class="fas fa-dollar-sign fa-2x text-gray-200"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- end card -->
+          <!-- end card -->
 
-        <!-- table container -->
-        <div class="table-container mx-auto">
-          <table class="table">
-            <thead class="table-header">
-              <tr>
-                <th
-                  scope="col"
-                  colspan="4"
-                  class="text-center py-3 th fw-semibold"
-                >
-                  Pengumuman
-                </th>
-              </tr>
-            </thead>
-            <tbody class="border border-dark">
-              <tr>
-                <td>
-                  1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis, fugiat.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- table container -->
+          <div class="table-container mx-auto">
+            <table class="table">
+              <thead class="table-header">
+                <tr>
+                  <th
+                    scope="col"
+                    colspan="4"
+                    class="text-center py-3 th fw-semibold"
+                  >
+                    Pengumuman
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="border border-dark">
+                <tr>
+                  <td>
+                    1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, fugiat.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <!-- end table -->
+
         <!-- end table -->
 
         <!-- end content -->

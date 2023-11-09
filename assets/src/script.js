@@ -15,6 +15,8 @@ const vets = document.querySelector("#vets");
 const settings = document.querySelector("#settings");
 const text1 = document.querySelector(".text1");
 const text2 = document.querySelector(".text2");
+const containerDashboard = document.querySelector("#container-content");
+const logo_satpolpp = document.querySelector("#logo-satpolpp");
 
 let previousToggled = null;
 let currentToggled = null;
@@ -25,14 +27,6 @@ search.addEventListener("click", (e) => {
 
 dashboard.addEventListener("click", (e) => {
   toggleMenu(dashboard);
-});
-
-vets.addEventListener("click", (e) => {
-  toggleMenu(vets);
-});
-
-settings.addEventListener("click", (e) => {
-  toggleMenu(settings);
 });
 
 const toggleMenu = (button) => {
@@ -58,6 +52,7 @@ menu.addEventListener("click", (e) => {
 });
 
 menu_container.style.paddingLeft = "12px";
+logo_satpolpp.style.paddingLeft = "10px";
 menu_container.style.paddingTop = "12px";
 
 const openMenu = () => {
@@ -69,8 +64,14 @@ const openMenu = () => {
   text1.style.display = "none";
   text2.style.display = "none";
 
+  // logo satpol pp
+  logo_satpolpp.style.paddingLeft = "220px";
+
+  // container content
+  containerDashboard.style.paddingLeft = "150px";
+
   // Hamburger
-  menu_container.style.paddingLeft = "135px";
+  menu_container.style.paddingLeft = "145px";
 
   let p_search = document.createElement("p");
   p_search.id = "p-search";
@@ -85,27 +86,6 @@ const openMenu = () => {
   dashboard.style.width = "220px";
   dashboard.style.justifyContent = "left";
   dashboard.appendChild(p_dash);
-
-  let p_clients = document.createElement("p");
-  p_clients.id = "p-clients";
-  p_clients.innerHTML = "Clients";
-  clients.style.width = "220px";
-  clients.style.justifyContent = "left";
-  clients.appendChild(p_clients);
-
-  let p_vets = document.createElement("p");
-  p_vets.id = "p-vets";
-  p_vets.innerHTML = "Vets";
-  vets.style.width = "220px";
-  vets.style.justifyContent = "left";
-  vets.appendChild(p_vets);
-
-  let p_settings = document.createElement("p");
-  p_settings.id = "p-settings";
-  p_settings.innerHTML = "Settings";
-  settings.style.width = "220px";
-  settings.style.justifyContent = "left";
-  settings.appendChild(p_settings);
 
   let user_container = document.createElement("div");
   user_container.id = "user-container";
@@ -125,9 +105,14 @@ const openMenu = () => {
 };
 
 const closeMenu = () => {
-  menu_container.style.paddingLeft = "12px";
+  menu_container.style.paddingLeft = "10px";
 
   untoggleMenu(menu);
+
+  // container content
+  containerDashboard.style.paddingLeft = "10px";
+
+  logo_satpolpp.style.paddingLeft = "10px";
 
   text1.style.display = "block";
   text2.style.display = "block";
@@ -139,18 +124,6 @@ const closeMenu = () => {
   dashboard.removeChild(document.getElementById("p-dashboard"));
   dashboard.style.width = "80px";
   dashboard.style.justifyContent = "center";
-
-  clients.removeChild(document.getElementById("p-clients"));
-  clients.style.width = "50px";
-  clients.style.justifyContent = "center";
-
-  vets.removeChild(document.getElementById("p-vets"));
-  vets.style.width = "50px";
-  vets.style.justifyContent = "center";
-
-  settings.removeChild(document.getElementById("p-settings"));
-  settings.style.width = "50px";
-  settings.style.justifyContent = "center";
 
   sidebar.classList.remove("active");
   sidebar.style.width = "120px";
