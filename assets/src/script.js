@@ -65,17 +65,16 @@ const openMenu = () => {
   text2.style.display = "none";
 
   // logo satpol pp
-  logo_satpolpp.style.paddingLeft = "220px";
-
-  // container content
-  containerDashboard.style.paddingLeft = "150px";
+  // logo_satpolpp.style.paddingLeft = "220px";
+  logo_satpolpp.style.width = "220px";
+  logo_satpolpp.style.justifyContent = "left";
 
   // Hamburger
   menu_container.style.paddingLeft = "145px";
 
   let p_search = document.createElement("p");
   p_search.id = "p-search";
-  p_search.innerHTML = "Search";
+  p_search.innerHTML = "Home";
   search.style.width = "220px";
   search.style.justifyContent = "left";
   search.appendChild(p_search);
@@ -109,10 +108,9 @@ const closeMenu = () => {
 
   untoggleMenu(menu);
 
-  // container content
-  containerDashboard.style.paddingLeft = "10px";
-
-  logo_satpolpp.style.paddingLeft = "10px";
+  logo_satpolpp.style.paddingLeft = "18px";
+  logo_satpolpp.style.width = "80px";
+  logo_satpolpp.style.justifyContent = "center";
 
   text1.style.display = "block";
   text2.style.display = "block";
@@ -130,3 +128,85 @@ const closeMenu = () => {
 
   main.style.width = "calc(100% - 120px)";
 };
+
+// js input file Tambah
+// Pangkat
+function displayFileName() {
+  var fileInput = document.getElementById("fileInput");
+  var fileNameSpan = document.getElementById("fileName");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}
+
+// Nomer KTP
+function displayFileName2() {
+  var fileInput = document.getElementById("fileInput2");
+  var fileNameSpan = document.getElementById("fileName2");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}
+
+// Nomer Pegawai
+function displayFileName3() {
+  var fileInput = document.getElementById("fileInput3");
+  var fileNameSpan = document.getElementById("fileName3");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}
+
+// ------------------------------------------
+
+// js input file Ubah
+// Pangkat
+function display() {
+  var fileInput = document.getElementById("fileInputUbah");
+  var fileNameSpan = document.getElementById("fileNameUbah");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}
+
+// Nomer KTP
+function display2() {
+  var fileInput = document.getElementById("fileInputUbah2");
+  var fileNameSpan = document.getElementById("fileNameUbah2");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}
+
+// Nomer Pegawai
+function display3() {
+  var fileInput = document.getElementById("fileInputUbah3");
+  var fileNameSpan = document.getElementById("fileNameUbah3");
+
+  if (fileInput.files.length > 0) {
+    var fileName = fileInput.files[0].name;
+    fileNameSpan.textContent = fileName;
+  } else {
+    fileNameSpan.textContent = "Belum ada file dipilih";
+  }
+}

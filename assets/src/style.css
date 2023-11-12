@@ -336,3 +336,52 @@ body {
 .table-row {
   font-size: 24px;
 }
+
+/* halaman user pegawai */
+.text-1 {
+  font-size: 36px;
+  padding-top: 16px;
+}
+.container-btnTambah {
+  padding-right: 95px;
+  padding-top: 41px;
+  border-radius: 10px;
+}
+
+.column-user {
+  background-color: #a1c6f2;
+}
+
+.container-file {
+  padding-top: 25px;
+}
+
+.name-file {
+  width: 277px;
+  height: 40px;
+  border-radius: 10px;
+}
+input[type="file"] {
+  display: none;
+}
+
+.container-icon {
+  padding-top: 25px;
+}
+.upload-icon {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.pdf-text {
+  font-size: 10px;
+}
+/* end halaman user pegawai */
+
+/* dokumen */
+.container-kab {
+  width: 250px;
+  border-radius: 10px;
+  padding-top: 42px;
+}
