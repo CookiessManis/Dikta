@@ -278,6 +278,21 @@ body {
   border-radius: 10px;
 }
 
+.pengumuman-container {
+  padding-left: 145px;
+}
+
+.card-header {
+  background-color: #a1c6f2;
+}
+
+.pengumuman-text {
+  text-align: center;
+  font-size: 30px;
+  -webkit-text-stroke: 0.2px black;
+  color: white;
+}
+
 .container-ham {
   width: 50px;
   height: 50px;
@@ -308,21 +323,6 @@ body {
   font-size: 14px;
 }
 
-.table-container {
-  width: 1250px;
-}
-
-.table-header {
-  background-color: #a1c6f2;
-  border-radius: 10;
-}
-.th {
-  border-radius: 10px 10px 0 0;
-  font-size: 30px;
-  color: white;
-  -webkit-text-stroke: 0.5px black;
-}
-
 /* user_pegawai */
 .header-user {
   font-size: 36px;
@@ -346,6 +346,11 @@ body {
   padding-right: 95px;
   padding-top: 41px;
   border-radius: 10px;
+}
+
+.user-card {
+  padding-left: 140px;
+  padding-top: 14px;
 }
 
 .column-user {
@@ -384,4 +389,40 @@ input[type="file"] {
   width: 250px;
   border-radius: 10px;
   padding-top: 42px;
+}
+
+.document-container {
+  padding-left: 58px;
+  padding-top: 55px;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+td,
+th {
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+}
+
+th {
+  background-color: blue;
+  border-top: none;
+}
+
+td:first-child,
+th:first-child {
+  border-left: none;
+}
+
+.container-document {
+  padding-top: 40px;
+}
+
+.border-document {
+  border: 1px solid black;
+  border-radius: 20px;
 }
