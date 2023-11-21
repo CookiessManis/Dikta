@@ -279,7 +279,7 @@ body {
 }
 
 .pengumuman-container {
-  padding-left: 145px;
+  padding-left: 93px;
 }
 
 .card-header {
@@ -395,7 +395,7 @@ input[type="file"] {
   padding-left: 58px;
   padding-top: 55px;
 }
-
+/* 
 table {
   border-collapse: collapse;
   border-radius: 1em;
@@ -416,13 +416,4 @@ th {
 td:first-child,
 th:first-child {
   border-left: none;
-}
-
-.container-document {
-  padding-top: 40px;
-}
-
-.border-document {
-  border: 1px solid black;
-  border-radius: 20px;
-}
+} */
