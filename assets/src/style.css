@@ -366,9 +366,6 @@ body {
   height: 40px;
   border-radius: 10px;
 }
-input[type="file"] {
-  display: none;
-}
 
 .container-icon {
   padding-top: 25px;
@@ -395,8 +392,8 @@ input[type="file"] {
   padding-left: 58px;
   padding-top: 55px;
 }
-/* 
-table {
+
+/* table {
   border-collapse: collapse;
   border-radius: 1em;
   overflow: hidden;
@@ -417,3 +414,7 @@ td:first-child,
 th:first-child {
   border-left: none;
 } */
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
