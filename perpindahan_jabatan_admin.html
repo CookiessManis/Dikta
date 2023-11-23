@@ -47,19 +47,34 @@
             </a>
           </li>
 
-          <li>
-            <a href="document_admin.html">
-              <button class="icon" id="document">
-                <div class="">
-                  <img
-                    src="assets/img/dashboard/document.png"
-                    width="35"
-                    alt="dashboard"
-                  />
-                  <span class="text3">Document</span>
-                </div>
-              </button>
-            </a>
+          <li class="dropend">
+            <button
+              class="icon"
+              id="document"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="">
+                <img
+                  src="assets/img/dashboard/document.png"
+                  width="35"
+                  alt="dashboard"
+                />
+                <span class="text3">Document</span>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="kenaikan_jabatan_admin.html"
+                  >Kenaikan Jabatan</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="perpindahan_jabatan_admin.html"
+                  >Perpindahan Jabatan</a
+                >
+              </li>
+            </ul>
           </li>
 
           <li>
@@ -109,6 +124,42 @@
         <!-- content -->
 
         <div style="padding-top: 75px; padding-bottom: 35px">
+          <h2
+            class="text-center fw-semibold"
+            style="font-size: 40px; padding-bottom: 80px"
+          >
+            Perpindahan Jabatan
+          </h2>
+          <div class="d-flex justify-content-end px-5">
+            <!--  -->
+            <div
+              class="dropdown"
+              style="
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-radius: 5px;
+                box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5);
+              "
+            >
+              <button
+                class="btn dropdown-toggle fw-semibold"
+                type="button"
+                style="background-color: white"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kabupaten Kota
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div
             style="
               border: 1px solid black;
