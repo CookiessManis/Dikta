@@ -418,3 +418,23 @@ th:first-child {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/* radio  */
+
+html {
+  --checked-color: #ff5722;
+}
+input,
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.radio {
+  accent-color: var(--checked-color);
+}

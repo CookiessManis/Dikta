@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/src/style.css" />
-    <title>Document Admin</title>
+    <title>Halaman User Admin</title>
   </head>
   <body>
     <!-- sidebar -->
@@ -37,7 +37,7 @@
             </div>
           </li>
           <li>
-            <a href="dashboard.html">
+            <a href="dashboard_admin.html">
               <button class="icon" id="search">
                 <div class="">
                   <img src="assets/images/home.png" width="35" alt="search" />
@@ -47,34 +47,19 @@
             </a>
           </li>
 
-          <li class="dropend">
-            <button
-              class="icon"
-              id="document"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div class="">
-                <img
-                  src="assets/img/dashboard/document.png"
-                  width="35"
-                  alt="dashboard"
-                />
-                <span class="text3">Document</span>
-              </div>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="kenaikan_jabatan_admin.html"
-                  >Kenaikan Jabatan</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="perpindahan_jabatan_admin.html"
-                  >Perpindahan Jabatan</a
-                >
-              </li>
-            </ul>
+          <li>
+            <a href="document_admin.html">
+              <button class="icon" id="document">
+                <div class="">
+                  <img
+                    src="assets/img/dashboard/document.png"
+                    width="35"
+                    alt="dashboard"
+                  />
+                  <span class="text3">Document</span>
+                </div>
+              </button>
+            </a>
           </li>
 
           <li>
@@ -123,28 +108,6 @@
 
         <!-- content -->
 
-        <!-- table -->
-        <div
-          class="d-flex justify-content-end"
-          style="padding-top: 42px; padding-right: 90px"
-        >
-          <div class="dropdown border border-black">
-            <button
-              class="btn bg-white dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </div>
-
         <div style="padding-top: 75px; padding-bottom: 35px">
           <div
             style="
@@ -172,7 +135,7 @@
                       text-align: center;
                     "
                   >
-                    No
+                    #
                   </th>
                   <th
                     class="px-2 py-3"
@@ -182,7 +145,7 @@
                       text-align: center;
                     "
                   >
-                    NIP
+                    Username
                   </th>
                   <th
                     class="px-2 py-3"
@@ -192,7 +155,7 @@
                       text-align: center;
                     "
                   >
-                    Nama
+                    Email
                   </th>
                   <th
                     class="px-2 py-3"
@@ -202,7 +165,7 @@
                       text-align: center;
                     "
                   >
-                    Tanggal Isi
+                    Detail
                   </th>
                   <th
                     class="px-2 py-3"
@@ -212,17 +175,7 @@
                       text-align: center;
                     "
                   >
-                    Unduh Data
-                  </th>
-                  <th
-                    colspan="3"
-                    style="
-                      border-right: 1px solid black;
-                      border-bottom: 1px solid black;
-                      text-align: center;
-                    "
-                  >
-                    Hapus Data
+                    Hapus
                   </th>
                 </tr>
               </thead>
@@ -237,15 +190,7 @@
                   >
                     1
                   </td>
-                  <td
-                    class="px-2 py-3"
-                    style="
-                      border-right: 1px solid black;
-                      border-bottom: 1px solid black;
-                    "
-                  >
-                    202121
-                  </td>
+
                   <td
                     class="px-2 py-3"
                     style="
@@ -274,8 +219,10 @@
                     <button
                       class="btn text-white"
                       style="background-color: #fec007"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
                     >
-                      Unduh
+                      Detail
                     </button>
                   </td>
                   <td
@@ -293,6 +240,81 @@
           </div>
         </div>
 
+        <!-- Modal Detail -->
+        <div
+          class="modal fade"
+          id="detail"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="">Username</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="">Email</label>
+                  <input type="email" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="">Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="">Apakah Diizinkan Login ?</label>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <input
+                        type="radio"
+                        id="option1"
+                        name="options"
+                        class="radio"
+                        value="option1"
+                      />
+                      <label for="">Ya</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="option2"
+                        name="options"
+                        class="radio"
+                        value="option2"
+                      />
+                      <label for="">Tidak</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- end section -->
 
         <!-- end content -->
