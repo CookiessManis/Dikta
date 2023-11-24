@@ -155,7 +155,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 120px;
+  width: 145px;
   height: 100vh;
   background-color: var(--blue);
   padding-bottom: 0;
@@ -279,7 +279,7 @@ body {
 }
 
 .pengumuman-container {
-  padding-left: 93px;
+  padding-left: 140px;
 }
 
 .card-header {
@@ -300,6 +300,7 @@ body {
   cursor: pointer;
   text-align: center;
   border-radius: 15px;
+  padding-left: 20px;
 }
 
 .menu-container {
