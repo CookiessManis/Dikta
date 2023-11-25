@@ -74,19 +74,59 @@
             />
           </a>
 
-          <div class="dropdown px-4 container-dropdown">
-            <img
-              src="assets/img/dashboard/logo-right.png"
-              alt=""
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            />
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <div class="d-flex">
+            <div class="pt-3">
+              <button
+                type="button"
+                class="btn btn-primary position-relative rounded-5 dropdown"
+                data-bs-toggle="dropdown"
+              >
+                🔔
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+
+                <div class="dropdown-menu">
+                  <div class="card" style="width: 450px">
+                    <div class="card-header bg-white">notifikesiyen</div>
+                    <div class="overflow-auto">
+                      <div class="card-body">
+                        <table class="table">
+                          <tr>
+                            <td>1.</td>
+                            <td>Akun Anda telah di setujui!</td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>Akun Anda telah di Non Aktifkan!</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="dropdown px-4 container-dropdown">
+              <img
+                src="assets/img/dashboard/logo-right.png"
+                alt=""
+                width="50"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                class="dropdown-toggle"
+              />
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- end hamburger menu -->
