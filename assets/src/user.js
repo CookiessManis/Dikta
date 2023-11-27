@@ -18,6 +18,7 @@ const text2 = document.querySelector(".text2");
 const text3 = document.querySelector(".text3");
 const text4 = document.querySelector(".text4");
 const pengumuman = document.querySelector(".pengumuman-container");
+const kompe_user = document.querySelector("#kompe_user");
 
 const containerDashboard = document.querySelector("#container-content");
 const logo_satpolpp = document.querySelector("#logo-satpolpp");
@@ -64,6 +65,7 @@ const openMenu = () => {
   toggleMenu(menu);
 
   text1.style.display = "none";
+  text2.style.display = "none";
 
   // logo satpol pp
   // logo_satpolpp.style.paddingLeft = "220px";
@@ -79,6 +81,13 @@ const openMenu = () => {
   search.style.width = "220px";
   search.style.justifyContent = "left";
   search.appendChild(p_search);
+
+  let p_kompe = document.createElement("p");
+  p_kompe.id = "p-kompe";
+  p_kompe.innerHTML = "Ujian Kompetensi";
+  kompe_user.style.width = "220px";
+  kompe_user.style.justifyContent = "left";
+  kompe_user.appendChild(p_kompe);
 
   // let p_dash = document.createElement("p");
   // p_dash.id = "p-dashboard";
@@ -116,10 +125,15 @@ const closeMenu = () => {
   logo_satpolpp.style.justifyContent = "center";
 
   text1.style.display = "block";
+  text2.style.display = "block";
 
   search.removeChild(document.getElementById("p-search"));
   search.style.width = "80px";
   search.style.justifyContent = "center";
+
+  kompe_user.removeChild(document.getElementById("p-kompe"));
+  kompe_user.style.width = "80px";
+  kompe_user.style.justifyContent = "center";
 
   // dashboard.removeChild(document.getElementById("p-dashboard"));
   // dashboard.style.width = "80px";
@@ -129,7 +143,7 @@ const closeMenu = () => {
   // pengumuman.style.paddingLeft = "92px";
 
   sidebar.classList.remove("active");
-  sidebar.style.width = "120px";
+  sidebar.style.width = "145px";
 
   main.style.width = "calc(100% - 120px)";
 };
