@@ -279,7 +279,10 @@ body {
 }
 
 .pengumuman-container {
-  padding-left: 140px;
+  padding-left: 130px;
+}
+.pengumuman {
+  width: 81rem;
 }
 
 .card-header {
@@ -438,4 +441,51 @@ input[type="radio"] {
 
 .radio {
   accent-color: var(--checked-color);
+}
+
+.table-dashboard-container {
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 1208px;
+  margin: 20px auto;
+}
+
+.container-text-jabatan {
+  font-size: 50px;
+  color: black;
+}
+.container-jabatan {
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 1500px) {
+  body {
+    background-color: white;
+  }
+  .pengumuman-container {
+    padding-left: 80px;
+  }
+  .pengumuman {
+    width: 70rem;
+  }
+  .table-dashboard-container {
+    width: 900px;
+    margin: 20px auto;
+  }
+  .container-text-jabatan {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    background-color: white;
+  }
+  .pengumuman-container {
+    padding-left: 27px;
+  }
+  .pengumuman {
+    width: 70rem;
+  }
 }
